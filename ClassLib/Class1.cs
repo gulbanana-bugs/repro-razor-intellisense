@@ -1,6 +1,8 @@
-﻿namespace ClassLib;
+﻿using InterfaceGenerator;
+namespace ClassLib;
 
-public class Class1
+[GenerateAutoInterface]
+public class Foo : IFoo
 {
-
+    public void Bar() { }
 }
