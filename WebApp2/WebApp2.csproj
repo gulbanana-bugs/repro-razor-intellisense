@@ -4,10 +4,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>WebApp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLib\ClassLib.csproj" />
+    <Reference Include="..\ClassLib\bin\$(Configuration)\$(TargetFramework)\ClassLib.dll" />
   </ItemGroup>
 
 </Project>
