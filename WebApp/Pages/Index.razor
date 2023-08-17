@@ -7,3 +7,11 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    private void UseClassLib1()
+    {
+        ClassLib.IFoo foo = new ClassLib.Foo();
+        foo.Bar();
+    }
+}
